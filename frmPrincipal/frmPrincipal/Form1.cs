@@ -19,7 +19,8 @@ namespace frmPrincipal
 
         private void btnListarDepartamentos_Click(object sender, EventArgs e)
         {
-            
+            FrmListarDepartamentos frmListar = new FrmListarDepartamentos();
+            frmListar.ShowDialog();
         }
 
         private void btnCrearDepartamento_Click(object sender, EventArgs e)
