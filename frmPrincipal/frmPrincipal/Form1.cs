@@ -27,5 +27,11 @@ namespace frmPrincipal
             FrmCrearDepartamento frmCrear = new FrmCrearDepartamento();
             frmCrear.ShowDialog();
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            FrmActualizarDepartamentos frmActualizar = new FrmActualizarDepartamentos();
+            frmActualizar.ShowDialog();
+        }
     }
 }
