@@ -169,7 +169,8 @@
             this.ClientSize = new System.Drawing.Size(466, 379);
             this.Controls.Add(this.gbCrearDepartamentos);
             this.Name = "FrmActualizarDepartamentos";
-            this.Text = "FrmActualizarDepartamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Actualizar Departamentos";
             this.gbCrearDepartamentos.ResumeLayout(false);
             this.gbCrearDepartamentos.PerformLayout();
             this.ResumeLayout(false);

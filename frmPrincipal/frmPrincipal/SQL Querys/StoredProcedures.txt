@@ -1,0 +1,36 @@
+﻿USE AdventureWorks2014
+GO
+
+CREATE PROCEDURE sp_CrearDepartamento
+(
+	@Nombre NVARCHAR(50),
+	@Descripcion NVARCHAR(50),
+	@FechaModificacion DATETIME
+)
+AS
+BEGIN
+	INSERT INTO HumanResources.Department(Name, GroupName, ModifiedDate)
+	VALUES(@Nombre, @Descripcion, @FechaModificacion)
+END
+
+CREATE PROCEDURE sp_ActualizarDepartamento
+(
+	@Codigo SMALLINT,
+	@Nombre NVARCHAR(50),
+	@Descripcion NVARCHAR(50),
+	@FechaModificacion DATETIME
+)
+AS
+BEGIN
+	UPDATE HumanResources.Department SET Name = @Nombre, GroupName = @Descripcion, ModifiedDate = @FechaModificacion
+	WHERE DepartmentID = @Codigo
+END
+
+CREATE PROCEDURE sp_EliminarDepartamento
+(
+	@Codigo SMALLINT
+)
+AS
+BEGIN
+	DELETE FROM HumanResources.Department WHERE DepartmentID=@Codigo;
+END

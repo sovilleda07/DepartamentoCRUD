@@ -97,7 +97,8 @@
             this.Controls.Add(this.lstbCargarDeptos);
             this.Controls.Add(this.lblEliminarDepartamentos);
             this.Name = "FrmEliminarDepartamento";
-            this.Text = "FrmEliminarDepartamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " Eliminar Departamento";
             this.Load += new System.EventHandler(this.FrmEliminarDepartamento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

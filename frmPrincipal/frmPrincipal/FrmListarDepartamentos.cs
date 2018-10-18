@@ -18,14 +18,18 @@ namespace frmPrincipal
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Se encarga de listar, mostrar todos los datos que se encuentran en esta tabla en la BD
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmListarDepartamentos_Load(object sender, EventArgs e)
         {
-            // Conexión
+            // Escribir la conexión
             string conn = @"server = (local); database = AdventureWorks2014;
                 integrated security = true;";
 
-            // Query
+            // Hacer el query
             string sql = @"SELECT *
                            FROM HumanResources.Department";
 

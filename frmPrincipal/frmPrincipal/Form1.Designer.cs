@@ -97,6 +97,7 @@
             this.ClientSize = new System.Drawing.Size(468, 301);
             this.Controls.Add(this.gbOpciones);
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Operaciones CRUD con departamentos Adventure Works";
             this.gbOpciones.ResumeLayout(false);
             this.ResumeLayout(false);

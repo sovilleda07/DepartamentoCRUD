@@ -25,6 +25,7 @@ namespace frmPrincipal
         /// <param name="e"></param>
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            // Verificar si el código está vacío
             if (txtCodigoDepto.Text == "")
             {
                 MessageBox.Show("Ingrese el Codigo del Departamento a Modificar", "Detalles de Excepción");

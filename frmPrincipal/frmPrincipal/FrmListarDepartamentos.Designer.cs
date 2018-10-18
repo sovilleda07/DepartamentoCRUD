@@ -60,7 +60,8 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvListarDepartamentos);
             this.Name = "FrmListarDepartamentos";
-            this.Text = "FrmListarDepartamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Listar Departamentos";
             this.Load += new System.EventHandler(this.FrmListarDepartamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListarDepartamentos)).EndInit();
             this.ResumeLayout(false);

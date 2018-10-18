@@ -38,6 +38,7 @@ namespace frmPrincipal
 
             try
             {
+                // Verificar si los campos estna vacíos
                 if (txtNombreDepto.Text == "" || txtDescripcion.Text == "")
                 {
                     MessageBox.Show("Llene los campos", "Detalles de excepcion");

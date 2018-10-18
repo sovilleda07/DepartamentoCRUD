@@ -16,7 +16,8 @@ namespace frmPrincipal
         {
             InitializeComponent();
         }
-
+        
+        // Se instancian los diferentes formularios para tener acceso a ellos.
         private void btnListarDepartamentos_Click(object sender, EventArgs e)
         {
             FrmListarDepartamentos frmListar = new FrmListarDepartamentos();

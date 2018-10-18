@@ -32,12 +32,12 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblFechaModificacion = new System.Windows.Forms.Label();
             this.gbCrearDepartamentos = new System.Windows.Forms.GroupBox();
-            this.lblCrearDepartamentos = new System.Windows.Forms.Label();
-            this.txtNombreDepto = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.dtpFechaMod = new System.Windows.Forms.DateTimePicker();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.dtpFechaMod = new System.Windows.Forms.DateTimePicker();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtNombreDepto = new System.Windows.Forms.TextBox();
+            this.lblCrearDepartamentos = new System.Windows.Forms.Label();
             this.gbCrearDepartamentos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,37 +89,15 @@
             this.gbCrearDepartamentos.TabIndex = 4;
             this.gbCrearDepartamentos.TabStop = false;
             // 
-            // lblCrearDepartamentos
+            // btnSalir
             // 
-            this.lblCrearDepartamentos.AutoSize = true;
-            this.lblCrearDepartamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCrearDepartamentos.Location = new System.Drawing.Point(85, 12);
-            this.lblCrearDepartamentos.Name = "lblCrearDepartamentos";
-            this.lblCrearDepartamentos.Size = new System.Drawing.Size(262, 29);
-            this.lblCrearDepartamentos.TabIndex = 4;
-            this.lblCrearDepartamentos.Text = "Crear Departamentos";
-            // 
-            // txtNombreDepto
-            // 
-            this.txtNombreDepto.Location = new System.Drawing.Point(122, 79);
-            this.txtNombreDepto.Name = "txtNombreDepto";
-            this.txtNombreDepto.Size = new System.Drawing.Size(277, 26);
-            this.txtNombreDepto.TabIndex = 5;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(122, 131);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(277, 26);
-            this.txtDescripcion.TabIndex = 6;
-            // 
-            // dtpFechaMod
-            // 
-            this.dtpFechaMod.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaMod.Location = new System.Drawing.Point(122, 185);
-            this.dtpFechaMod.Name = "dtpFechaMod";
-            this.dtpFechaMod.Size = new System.Drawing.Size(159, 26);
-            this.dtpFechaMod.TabIndex = 7;
+            this.btnSalir.Location = new System.Drawing.Point(272, 242);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 37);
+            this.btnSalir.TabIndex = 9;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnGuardar
             // 
@@ -131,15 +109,37 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnSalir
+            // dtpFechaMod
             // 
-            this.btnSalir.Location = new System.Drawing.Point(272, 242);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 37);
-            this.btnSalir.TabIndex = 9;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.dtpFechaMod.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaMod.Location = new System.Drawing.Point(122, 185);
+            this.dtpFechaMod.Name = "dtpFechaMod";
+            this.dtpFechaMod.Size = new System.Drawing.Size(159, 26);
+            this.dtpFechaMod.TabIndex = 7;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(122, 131);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(277, 26);
+            this.txtDescripcion.TabIndex = 6;
+            // 
+            // txtNombreDepto
+            // 
+            this.txtNombreDepto.Location = new System.Drawing.Point(122, 79);
+            this.txtNombreDepto.Name = "txtNombreDepto";
+            this.txtNombreDepto.Size = new System.Drawing.Size(277, 26);
+            this.txtNombreDepto.TabIndex = 5;
+            // 
+            // lblCrearDepartamentos
+            // 
+            this.lblCrearDepartamentos.AutoSize = true;
+            this.lblCrearDepartamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCrearDepartamentos.Location = new System.Drawing.Point(85, 12);
+            this.lblCrearDepartamentos.Name = "lblCrearDepartamentos";
+            this.lblCrearDepartamentos.Size = new System.Drawing.Size(262, 29);
+            this.lblCrearDepartamentos.TabIndex = 4;
+            this.lblCrearDepartamentos.Text = "Crear Departamentos";
             // 
             // FrmCrearDepartamento
             // 
@@ -148,7 +148,8 @@
             this.ClientSize = new System.Drawing.Size(466, 309);
             this.Controls.Add(this.gbCrearDepartamentos);
             this.Name = "FrmCrearDepartamento";
-            this.Text = "FrmCrearDepartamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Crea rDepartamento";
             this.gbCrearDepartamentos.ResumeLayout(false);
             this.gbCrearDepartamentos.PerformLayout();
             this.ResumeLayout(false);
