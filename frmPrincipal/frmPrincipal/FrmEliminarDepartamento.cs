@@ -36,7 +36,7 @@ namespace frmPrincipal
         private void btnListar_Click(object sender, EventArgs e)
         {
             // Hacer el query
-            string sqlSelect = @"SELECT Name, GroupName 
+            string sqlSelect = @"SELECT DepartmentID, Name 
                                     FROM HumanResources.Department";
             // Se crea el comando
             SqlCommand cmd = new SqlCommand(sqlSelect, conn);
@@ -95,7 +95,7 @@ namespace frmPrincipal
                 // Establecer la conexión
                 conn.Open();
 
-                // Eliminación de la moneda
+                // Eliminación del depto
                 if (lstbCargarDeptos.SelectedIndex == -1)
                 {
                     MessageBox.Show("Favor seleccionar un depto. antes de ejecutar la acción de eliminar", "Información");
