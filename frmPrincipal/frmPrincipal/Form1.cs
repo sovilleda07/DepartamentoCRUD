@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace frmPrincipal
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void btnListarDepartamentos_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnCrearDepartamento_Click(object sender, EventArgs e)
+        {
+            FrmCrearDepartamento frmCrear = new FrmCrearDepartamento();
+            frmCrear.ShowDialog();
         }
     }
 }
