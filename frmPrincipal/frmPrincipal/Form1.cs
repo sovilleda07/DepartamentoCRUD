@@ -33,5 +33,11 @@ namespace frmPrincipal
             FrmActualizarDepartamentos frmActualizar = new FrmActualizarDepartamentos();
             frmActualizar.ShowDialog();
         }
+
+        private void btnEliminarDepartamento_Click(object sender, EventArgs e)
+        {
+            FrmEliminarDepartamento frmEliminar = new FrmEliminarDepartamento();
+            frmEliminar.ShowDialog();
+        }
     }
 }
